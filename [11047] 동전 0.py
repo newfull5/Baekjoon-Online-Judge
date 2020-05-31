@@ -12,3 +12,4 @@ for i in range(len(cost)-1,-1,-1):
     answer += temp
     
 print(answer)
+ 
