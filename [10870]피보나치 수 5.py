@@ -6,4 +6,4 @@ def fib(K):
     else:
         return fib(K-1) + fib(K-2)
     
-print(fib(int(input())))
+print(fib(int(input()))) 
