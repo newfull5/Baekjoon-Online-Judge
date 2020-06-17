@@ -15,3 +15,4 @@ for _ in range(b):
         
         
 print(min(rest*a, pack*math.ceil(a/6), (pack*divmod(a,6)[0]) + (rest*divmod(a,6)[1])))
+ 
