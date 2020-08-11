@@ -7,3 +7,4 @@ def fib(K):
         return fib(K-1) + fib(K-2)
     
 print(fib(int(input()))) 
+
