@@ -1,7 +1,7 @@
 """
 #2020.07.29
 a, b = map(int, input().split())
-
+   
 stack = []
 for _ in range(a):
     stack.append(int(input()))
