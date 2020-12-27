@@ -7,7 +7,7 @@ for _ in range(a):
     stack.append(int(input()))
     
 left, right = 1, max(stack)
-
+  
 while left<=right:
     mid = (left+right)//2
     
