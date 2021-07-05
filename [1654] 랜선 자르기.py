@@ -19,6 +19,7 @@ while left<=right:
         
 print(right)
 """
+"""
 #2020.12.11
 a,b = map(int, input().split())
 
@@ -39,5 +40,32 @@ while left<=right:
         left = mid + 1
     else:
         right = mid -1
+        
+print(right)
+"""
+#2021.07.05
+K, N = map(int, input().split())
+arr = []
+
+for _ in range(K):
+    arr.append(int(input()))
+    
+left, right = 0, max(arr)
+
+while left <= right:
+    
+    mid = (left + right) // 2
+    
+    if mid == 0:
+        right = 1
+        break
+
+    cnt = sum([l // mid for l in arr])
+
+    if cnt < N:
+        right = mid - 1
+
+    elif cnt >= N:
+        left = mid + 1
         
 print(right)
